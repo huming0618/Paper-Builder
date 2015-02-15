@@ -1,0 +1,14 @@
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.paper-editor{
+  min-height: 700px;
+}
+.right-aside{
+  background-color: gray;
+  min-height: 700px;
+}
+
