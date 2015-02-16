@@ -5,7 +5,7 @@
     <title>UI</title>
     <!--build:css(.) styles/vendor.css-->
     <!--bower:css-->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <!--endbower-->
     <!--endbuild-->
     <link href="styles/main.css" rel="stylesheet">
@@ -13,14 +13,36 @@
   <body>
     <div class="container">
       <div class="col-md-8 paper-editor">
+        <div class="paper-editor__add">
+          <div class="paper-editor__add__content"><i class="glyphicon glyphicon-plus"></i>&nbsp;添加新问题</div>
+        </div>
+        <div class="row paper-editor__picker">
+          <div class="col-md-3">
+            <h5>选择题</h5>
+            <div class="paper-editor__picker__group"><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;单选题</a><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;多选题</a><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;下拉选择</a></div>
+          </div>
+          <div class="col-md-3">
+            <h5>填空题</h5>
+            <div class="paper-editor__picker__group"><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;单行</a><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;多行</a></div>
+          </div>
+          <div class="col-md-3">
+            <h5>文件</h5>
+            <div class="paper-editor__picker__group"><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;单个文件</a><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;多个文件上传</a></div>
+          </div>
+          <div class="col-md-3">
+            <h5>其他</h5>
+            <div class="paper-editor__picker__group"><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;日期</a><a href="#" class="paper-editor__picker__group__item"><span aria-hidden="true" class="glyphicon glyphicon-star"></span>&nbsp;评分</a></div>
+          </div>
+        </div>
         <div class="paper-editor__question"></div>
         <div class="paper-editor__question"></div>
         <div class="paper-editor__question"></div>
       </div>
       <div class="col-md-4 right-aside">
-        <div id="quetion-setting"> </div>
+        <div id="quetion-setting"></div>
       </div>
     </div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="scripts/mockup.js"></script>
   </body>
 </html>

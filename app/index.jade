@@ -12,9 +12,15 @@ html
 	body
 		div.container
 			div.col-md-8.paper-editor
+				div.paper-editor__add
+					div.paper-editor__add__content
+						i.glyphicon.glyphicon-plus
+						| &nbsp;添加新问题
+				include choose-question-panel
 				div.paper-editor__question
 				div.paper-editor__question
 				div.paper-editor__question
 			div.col-md-4.right-aside
-				div#quetion-setting 
+				div#quetion-setting
 		script(src="bower_components/jquery/dist/jquery.js")
+		script(src="scripts/mockup.js")

@@ -3,12 +3,45 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 .paper-editor{
   min-height: 700px;
 }
 .right-aside{
-  background-color: gray;
+  background-color: #ebebeb;
   min-height: 700px;
 }
-
+.paper-editor .paper-editor__add{
+  margin: 10px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px dashed gray;
+}
+.paper-editor__add--focus{
+  background-color: #F7F7F7;
+  
+}
+.paper-editor__add__content{
+  padding: 20px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.paper-editor__picker__group{
+  display: block;
+  padding-left: 0px;
+  max-width: 280px;
+}
+.paper-editor__picker__group__item{
+  background-color: #ebebeb;
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  display: block;
+  margin-bottom: 5px;
+  padding: 4px 10px;
+  position: relative;
+}
